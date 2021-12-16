@@ -37,9 +37,9 @@ func TestWrapper(t *testing.T) {
 		for _, topping := range tc.toppings {
 			switch topping {
 			case Cheese:
-				pizza = &ToppingCheese{pizza: pizza} // wraps the topping and make a new object
+				pizza = &ToppingCheese{pizza: pizza} // wraps the earlier object with a topping
 			case Chicken:
-				pizza = &ToppingChicken{pizza: pizza} // wraps the topping and make a new object
+				pizza = &ToppingChicken{pizza: pizza} // wraps the earlier object with a topping
 			}
 		}
 		assert.Equal(t, tc.expectPrice, pizza.Price())
