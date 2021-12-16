@@ -1,8 +1,6 @@
 # Design Patterns for Go
 
-Design patterns in Go.
-
-Motive is to keep the examples as close to real world problems as possible. Suggestions and reviews are welcome.
+Design patterns in Go. Motive is to keep the examples as close to real world problems as possible. Suggestions and reviews are welcome.
 
 ## Categorization:
 - Creational: Concerns with the process of object creation.
@@ -17,6 +15,7 @@ Motive is to keep the examples as close to real world problems as possible. Sugg
 - Builder
 
 ### Structural
+- [Wrapper](./structural/wrapper.go)
 - Adapter
 - Bridge
 - Decorator
@@ -24,7 +23,6 @@ Motive is to keep the examples as close to real world problems as possible. Sugg
 - Proxy
 - Glue
 - Composite
-- Wrapper
 
 ### Behavioural
 - [Strategy](./behavioural/strategy.go)
@@ -42,10 +40,9 @@ Motive is to keep the examples as close to real world problems as possible. Sugg
 
 ## Contributing
 
-Aim is to explain the benefit of the pattern with a simple real world example. Do create issues and pull requests to make it better.
+Aim is to explain the benefit of the pattern with a simple real world example. Feel free to create issues and pull requests to make it better.
 
 ## Referrences
 
 - [Go Patterns by bvwells](https://github.com/bvwells/go-patterns) have a lot of other nice examples.
-- [Design Patterns by Gangs of Four](https://en.wikipedia.org/wiki/Design_Patterns)
-- 
+- [Design Patterns by Gangs of Four](https://en.wikipedia.org/wiki/Design_Patterns) 
