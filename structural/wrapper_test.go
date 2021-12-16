@@ -29,6 +29,11 @@ func TestWrapper(t *testing.T) {
 			toppings:    []Topping{Cheese, Chicken},
 			expectPrice: 370,
 		},
+		{
+			pizza:       &Pepperoni{},
+			toppings:    []Topping{Cheese, Chicken},
+			expectPrice: 470,
+		},
 	}
 
 	for _, tc := range tests {

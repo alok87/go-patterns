@@ -48,7 +48,7 @@ type Pepperoni struct {
 }
 
 func (t *Pepperoni) Price() int {
-	return 399
+	return 400
 }
 
 // ToppingCheese wraps the Pizza interface, extends pizza functionality
