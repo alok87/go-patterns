@@ -1,19 +1,23 @@
 package creational
 
-import "fmt"
+import (
+	"fmt"
+)
 
 /*
 
 Summary:
-	Abstract Factory provides an interface for creating generic product objects.
-	Removes dependencies of specifying concrete implementations from clients
-	that create product objects.
+Abstract Factory provides an interface for creating generic product objects.
+Removes dependencies of specifying concrete implementations from clients
+that create product objects.
 
-	Example:
-		Motif and OpenLook are the implementations.
-		Abstract Factory is used to create the objects of these implementations
-		This design of creating objects helps the client to create
-		objects without getting tied to concrete implementation.
+Example:
+Motif and OpenLook are the implementations.
+Abstract Factory is used to create the objects of these implementations.
+
+Benefit:
+This design of creating objects helps the client to create
+objects without specifying concrete implementation. Enables decoupling.
 */
 
 const (
