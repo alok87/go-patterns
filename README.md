@@ -1,6 +1,8 @@
 # Design Patterns for Go
 
-Design patterns in Go. Motive is to keep the examples as close to real world problems when possible. Suggestions and reviews are welcome.
+Design patterns for Go. 
+
+Patters have `Summary`, `Example` and `Benefit` section present as comments. The focus is to bring out the **benefit** of the pattern with a simple real world example.
 
 ## Categorization:
 - Creational: Concerns with the process of object creation.
@@ -11,7 +13,7 @@ Design patterns in Go. Motive is to keep the examples as close to real world pro
 - [Abstract Factory](./creational/abstract_factory.go)
 - [Fluent Builder](./creational/fluent_builder.go)
 - [Classic Builder](./creational/classic_builder.go)
-- Factory Method
+- [Factory Method](./creational/factory_method.go)
 - Prototype
 - Solitare
 
@@ -42,12 +44,12 @@ Design patterns in Go. Motive is to keep the examples as close to real world pro
 
 ## Contributing
 
-Aim is to explain the benefit of the pattern with a simple real world example when possible. Feel free to create issues and pull requests to make it better and clearer for the reader.
+Feel free to create issues and pull requests to make it better and clearer for the reader.
 
 ## Referrences
 Previous work on this subject which can also help in understanding:
 - [Design Patterns by Gangs of Four(GOF)](https://en.wikipedia.org/wiki/Design_Patterns) is a book on this.
 - [Go Patterns by bvwells](https://github.com/bvwells/go-patterns) have a lot of nice examples.
-- [Refactoring Guru](https://refactoring.guru/design-patterns/go), also have a lot of examples.
+- [Refactoring Guru](https://refactoring.guru/design-patterns/go) also have a lot of examples.
 - [Builder Pattern in Go](https://devcharmander.medium.com/design-patterns-in-golang-the-builder-dac468a71194) is a nice blog series on various styles on this pattern.
-- [Fluent vs classic builder pattern](https://medium.com/@sawomirkowalski/design-patterns-builder-fluent-interface-and-classic-builder-d16ad3e98f6c)
+- [Fluent vs classic builder pattern](https://medium.com/@sawomirkowalski/design-patterns-builder-fluent-interface-and-classic-builder-d16ad3e98f6c) separates the builder pattern into two types, internet is filled with confusing articles on it. There are actually 2 patterns.
