@@ -27,9 +27,9 @@ func TestFluentBuilder(t *testing.T) {
 		tc = tc
 		builder := NewEmployeeBuilder()
 		got := builder.
-			Called(tc.name).
-			WorksAt(tc.company).
-			At(tc.address).
+			WithName(tc.name).
+			WithCompany(tc.company).
+			WithAddress(tc.address).
 			Build()
 		assert.Equal(t, tc.expected, got)
 	}

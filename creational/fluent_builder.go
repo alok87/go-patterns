@@ -31,15 +31,15 @@ func NewEmployeeBuilder() *EmployeeBuilder {
 	return &EmployeeBuilder{}
 }
 
-func (c *EmployeeBuilder) Called(name string) *EmployeeBuilder {
+func (c *EmployeeBuilder) WithName(name string) *EmployeeBuilder {
 	c.name = name
 	return c
 }
-func (c *EmployeeBuilder) WorksAt(company string) *EmployeeBuilder {
+func (c *EmployeeBuilder) WithCompany(company string) *EmployeeBuilder {
 	c.company = company
 	return c
 }
-func (c *EmployeeBuilder) At(address string) *EmployeeBuilder {
+func (c *EmployeeBuilder) WithAddress(address string) *EmployeeBuilder {
 	c.address = address
 	return c
 }
