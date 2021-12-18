@@ -28,7 +28,7 @@ Patters have `Summary`, `Example` and `Benefit` section present as comments. The
 
 ### Behavioural
 - [Strategy](./behavioural/strategy.go)
-- Template Method
+- [Template Method](./behavioural/template_method.go)
 - Chain Of Responsibility
 - Command
 - Iterator
@@ -41,11 +41,11 @@ Patters have `Summary`, `Example` and `Benefit` section present as comments. The
 - Walker
 
 ## Contributing
-
-Feel free to create issues and pull requests to make it better and clearer for the reader.
 ```
 make test
 ```
+
+Feel free to create issues and pull requests to make it better and clearer for the reader.
 
 ## Referrences
 Previous work on this subject which helped in making this:
