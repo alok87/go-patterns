@@ -3,7 +3,7 @@ package creational
 import (
 	"testing"
 
-	capturer "github.com/alok87/go-capturer"
+	capture "github.com/alok87/go-capture"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -34,7 +34,7 @@ func TestMotifScrollBar(t *testing.T) {
 	_, ok := scrollbar.(motifScrollBar)
 	assert.True(t, ok)
 
-	out := capturer.CaptureStdout(func() {
+	out := capture.Stdout(func() {
 		scrollbar.Scroll()
 	})
 	assert.Equal(t, "enjoy the motif scrolling\n", out)
@@ -50,7 +50,7 @@ func TestOpenLookScrollBar(t *testing.T) {
 	_, ok := scrollbar.(openLookScrollBar)
 	assert.True(t, ok)
 
-	out := capturer.CaptureStdout(func() {
+	out := capture.Stdout(func() {
 		scrollbar.Scroll()
 	})
 	assert.Equal(t, "openlook scrolling\n", out)
@@ -66,7 +66,7 @@ func TestMotifWindow(t *testing.T) {
 	_, ok := window.(motifWindow)
 	assert.True(t, ok)
 
-	out := capturer.CaptureOutput(func() {
+	out := capture.Output(func() {
 		window.Open()
 	})
 	assert.Equal(t, "opening motif window since 1990s\n", out)
@@ -82,7 +82,7 @@ func TestOpenLookWindow(t *testing.T) {
 	_, ok := window.(openLookWindow)
 	assert.True(t, ok)
 
-	out := capturer.CaptureOutput(func() {
+	out := capture.Output(func() {
 		window.Open()
 	})
 	assert.Equal(t, "opening window since I do not remember\n", out)

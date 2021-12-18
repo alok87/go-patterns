@@ -3,7 +3,7 @@ package creational
 import (
 	"testing"
 
-	capturer "github.com/alok87/go-capturer"
+	capture "github.com/alok87/go-capture"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -31,7 +31,7 @@ func TestFactoryMethod(t *testing.T) {
 		tc = tc
 		parking := NewParking(tc.parkType, tc.store)
 		assert.NotNil(t, parking)
-		out := capturer.CaptureOutput(func() {
+		out := capture.Output(func() {
 			parking.ParkVehicle()
 			parking.UnParkVehicle()
 			parking.DisplayFreeSlots()

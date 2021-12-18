@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/alok87/go-capturer"
+	capture "github.com/alok87/go-capture"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -43,7 +43,7 @@ func TestStrategy(t *testing.T) {
 	// default scenario
 	lb := NewLoadbalancer()
 	assert.NotNil(t, lb)
-	defaultOut := capturer.CaptureOutput(func() {
+	defaultOut := capture.Output(func() {
 		lb.Balance()
 	})
 	assert.Equal(t, "roundRobin\nloadbalanced\n", defaultOut)
@@ -69,7 +69,7 @@ func TestStrategy(t *testing.T) {
 		assert.Nil(t, err)
 		assert.NotNil(t, lb)
 
-		out := capturer.CaptureOutput(func() {
+		out := capture.Output(func() {
 			lb.Balance()
 		})
 		assert.Equal(t, tc.result, out)

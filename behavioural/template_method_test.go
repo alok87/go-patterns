@@ -3,7 +3,7 @@ package behavioural
 import (
 	"testing"
 
-	"github.com/alok87/go-capturer"
+	capture "github.com/alok87/go-capture"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -26,7 +26,7 @@ func TestTempalteMethod(t *testing.T) {
 
 	for _, tc := range tests {
 		tc = tc
-		out := capturer.CaptureOutput(func() {
+		out := capture.Output(func() {
 			SurgeryWorkflowTemplate(tc.provider)
 		})
 		assert.Equal(t, tc.expected, out)

@@ -1,3 +1,5 @@
+github.com/alok87/go-capture v0.0.0-20211218195718-0373e232efae h1:CGmdGFJndWZLb3hsjjPFM+ZiqRApLMtcuQ1sp7/hZLc=
+github.com/alok87/go-capture v0.0.0-20211218195718-0373e232efae/go.mod h1:YFQZY8eCOAAfBBk+UkG6AQ2hU/xeHA5D0DdPb9ZtI9o=
 github.com/alok87/go-capturer v0.0.0-20211216081126-83a258cf718b h1:YSMKeU9GNgAApMlXJPpPUeyIHDXb+e2Fq3ds4zSzKiY=
 github.com/alok87/go-capturer v0.0.0-20211216081126-83a258cf718b/go.mod h1:x/qtgPTnvPtRuzurmy/ZlqlPfW93yAz8LC7sNtzZvN4=
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=
