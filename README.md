@@ -43,6 +43,9 @@ Patters have `Summary`, `Example` and `Benefit` section present as comments. The
 ## Contributing
 
 Feel free to create issues and pull requests to make it better and clearer for the reader.
+```
+make test
+```
 
 ## Referrences
 Previous work on this subject which helped in making this:
