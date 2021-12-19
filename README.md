@@ -29,7 +29,7 @@ Patters have `Summary`, `Example` and `Benefit` section present as comments. The
 ### Behavioural
 - [Strategy](./behavioural/strategy.go)
 - [Template Method](./behavioural/template_method.go)
-- Chain Of Responsibility
+- [Chain Of Responsibility](./behavioural/chain_of_responsibility.go)
 - Command
 - Iterator
 - Mediator
