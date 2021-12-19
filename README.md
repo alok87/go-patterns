@@ -19,8 +19,8 @@ Patters have `Summary`, `Example` and `Benefit` section present as comments. The
 ### Structural
 - [Wrapper](./structural/wrapper.go)
 - [Adapter](./structural/adapter.go)
+- [Decorator](./structural/decorator.go)
 - Bridge
-- Decorator
 - ObjectPool/Flyweight
 - Proxy
 - Glue
