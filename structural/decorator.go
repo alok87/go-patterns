@@ -2,6 +2,7 @@ package structural
 
 import (
 	"fmt"
+	"io"
 	"net/http"
 	"strings"
 )
@@ -75,22 +76,9 @@ func DecorateV3(f func(s string) string, param string) string {
 func NewRelicMiddleWare(next http.Handler) http.Handler {
 	return http.HandlerFunc(
 		func(rw http.ResponseWriter, r *http.Request) {
-			fmt.Printf("newrelic start ")
+			io.WriteString(rw, "newrelic_start")
 			next.ServeHTTP(rw, r)
-			fmt.Printf("newrelic end ")
-		},
-	)
-}
-
-// GraylogMiddleWare is the Decaorator for graylog http handler
-// request logging middle ware
-// Uses DecoratorV1 style
-func GraylogMiddleWare(next http.Handler) http.Handler {
-	return http.HandlerFunc(
-		func(rw http.ResponseWriter, r *http.Request) {
-			fmt.Printf("graylogging start ")
-			next.ServeHTTP(rw, r)
-			fmt.Printf("graylogging end ")
+			io.WriteString(rw, "newrelic_end")
 		},
 	)
 }
@@ -102,12 +90,12 @@ func AuthorizeMiddleware(next http.Handler) http.Handler {
 	return http.HandlerFunc(
 		func(rw http.ResponseWriter, r *http.Request) {
 			value := r.Header.Get("Authorization")
-			token := strings.Split(value, "Bearer ")
-			if len(token) != 2 || token[1] == "usertoken" {
+			token := strings.Replace(value, "Bearer ", "", 1)
+			if token != "usertoken" {
 				http.Error(rw, "access denied", http.StatusForbidden)
 				return
 			}
-			fmt.Printf("access allowed ")
+			io.WriteString(rw, "access_allowed")
 			next.ServeHTTP(rw, r)
 		},
 	)
